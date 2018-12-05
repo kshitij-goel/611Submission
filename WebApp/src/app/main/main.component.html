@@ -1,0 +1,52 @@
+<div class="main">
+
+  <div class="override-outer" id="outer_container">
+    <div class="override-box" id="overrideBox">
+        <span >OVERRIDE</span>
+        <label class="switch switch-label">
+          <input type="checkbox">
+          <span class="slider round" (click)="common.overrideClick()" *ngIf="!common.overrideDis"></span>
+        </label>
+    </div>
+    <div class="switch-outer" id="switchOne">
+      <div class="color-parent">
+        <div class="color-box" id="textOne" [ngStyle]="common.redStatus ? {'background-color': 'red'} : {'background-color': 'white'} "></div>
+      </div>
+      <span *ngIf="!common.redDis">Red</span>
+      <label class="switch switch-label">
+        <input type="checkbox" [disabled]="common.redDis" id="redSlider">
+        <span class="slider round" (click)="common.redClick()" *ngIf="!common.redDis"></span>
+      </label>
+    </div>
+    <div class="switch-outer" id="switchtwo">
+      <div class="color-parent">
+        <div class="color-box" id="textTwo" [ngStyle]="common.yellowStatus ? {'background-color': 'yellow'} : {'background-color': 'white'} "></div>
+     </div>
+     <span *ngIf="!common.yellowDis">Yellow</span>
+      <label class="switch switch-label">
+       <input type="checkbox" [disabled]="common.yellowDis" id="yellowSlider">
+       <span class="slider round" (click)="common.yellowClick()" *ngIf="!common.yellowDis"></span>
+     </label>
+    </div>
+    <div class="switch-outer" id="switchthree">
+      <div class="color-parent">
+        <div class="color-box" id="textThree" [ngStyle]="common.greenStatus ? {'background-color': 'green'} : {'background-color': 'white'} "></div>
+      </div>
+      <span *ngIf="!common.greenDis">Green</span>
+      <label class="switch switch-label">
+        <input type="checkbox" [disabled]="common.greenDis" id="greenSlider">
+        <span class="slider round" (click)="common.greenClick()" *ngIf="!common.greenDis"></span>
+      </label>
+    </div>
+  </div>
+
+  <div id="sideDiv" class="senson-text">
+    <span class="font-20">
+      UltraSonic Sensor Reading
+    </span>
+    <br><br>
+    <span id="sensorReading" class="sensor-display" *ngIf="common.sensorDistance > 0">
+      {{common.sensorDistance}}
+    </span>
+  </div>
+</div>

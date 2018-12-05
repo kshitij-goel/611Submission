@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RPi1">
+
+    <Switch
+        android:id="@+id/OverRide_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/over_ride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchRed" />
+
+    <Switch
+        android:id="@+id/switchGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchYellow" />
+
+    <TextView
+        android:id="@+id/textViewRed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="300dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewYellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="300dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRed" />
+
+    <TextView
+        android:id="@+id/textViewGreen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="300dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYellow" />
+
+    <TextView
+        android:id="@+id/textViewSensor"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="182dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OverRide_Switch" />
+</android.support.constraint.ConstraintLayout>

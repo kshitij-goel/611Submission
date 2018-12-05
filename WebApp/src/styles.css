@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.switch {
+  position: relative;
+  horizontal-align: center;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mycolor{
+  color: cadetblue;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 56px;
+  left: 0;
+  background-color: #707579;
+  overflow-x: auto;
+  padding-top: 20px;
+  overflow-scrolling: auto;
+}
+.list-header{
+  position: fixed;
+  align-content: center;
+  z-index: 1030;
+  font-size: 24px;
+  color: darkturquoise;
+}
+.list-item{
+  font-size: 16px;
+}
+.center {
+  display: block;
+  margin: auto;
+  /*width: 50%;*/
+  padding: 10px;
+}
+.sensor-display{
+  width: 100%;
+  height: 100px;
+  font-size:20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px #888888;
+  border: 1px solid;
+  margin-left: 30px;
+}
+.senson-text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left:80%;
+}
+.font-20{
+  font-size: 20px;
+}
+.switch-label{
+  width: 60px;
+  margin-right: 20px;
+}
+.color-box{
+  height: 50px;
+  width: 80px;
+}
+.color-parent{
+  margin-right: 40%;
+  width: 50px;
+  height: 30px;
+}
+.override-box{
+  width: 500px;
+  height: 100px;
+  margin-left: 10%;
+}
+.override-outer{
+  display: table-row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  left:40%;
+}
+.switch-outer{
+  display: flex;
+  width: 500px;
+  height: 100px;
+}
